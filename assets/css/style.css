@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+body.xml {
+    background-color:pink;
+}
+.card{
+    background: linear-gradient(35deg,pink,yellow,black);
+    font-size: bold;
+    margin-top: 22px;
+}
+h2 {
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+div#postcontainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+h1.bg-success.text-white.p-4.mb-4 {
+    text-align: center;
+}

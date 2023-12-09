@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <title>HTTP-XML-promise-firebase</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body class="xml">
+    <h1 class="bg-info text-center text-white p-4 mb-4">
+        HTTP - XMLHTTPRequest with promise
+    </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="postForm">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" class="form-control">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="body">Content</label>
+                                <textarea type="text" rows="5" id="body" class="form-control"></textarea>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">userId</label>
+                                <select class="form-control" id="userId">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" id="submitBtn">Add post</button>
+                                <button class="btn btn-success d-none" id="updateBtn" type="button">update post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                <div id="postcontainer">
+                    <!-- <div class="card mb-4" id="${post.id}">
+                        <div class="card-header">
+                        <h2>${post.title}</h2>
+                            </div>
+                        <div class="card-body">
+                        <p>
+                          ${post.body}
+                            </p>
+                              </div>
+                          <div class="card-footer d-flex justify-content-between">
+                         <button class="btn btn-primary" onclick="onEdit(this)">
+                             Edit
+                            </button>
+                            <button class="btn btn-danger" onclick="onDelet(this)">
+                            Delete
+                            </button>
+                        </div>
+                     </div> -->
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lader d-none" id="lader">
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading...</span>
+          </button>
+          
+    </div>
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
